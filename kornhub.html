@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kornhub</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #000;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .logo span {
+      background-color: orange;
+      color: black;
+      padding: 0 5px;
+      border-radius: 4px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .video-card {
+      background-color: #222;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    .video-title {
+      padding: 10px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Korn<span>hub</span></div>
+    <nav>
+      <a href="#videos">Videos</a>
+      <a href="#tour">Tour</a>
+      <a href="#news">News</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Kornhub</h1>
+    <p>Your #1 source for Korn videos, news, and tour dates.</p>
+  </section>
+
+  <section id="videos" class="video-grid">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/VAWjsVoDpm0" allowfullscreen></iframe>
+      <div class="video-title">Freak on a Leash (Official Video)</div>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/jRGrNDV2mKc" allowfullscreen></iframe>
+      <div class="video-title">Coming Undone (Official Video)</div>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/ojb94HnJ5wE" allowfullscreen></iframe>
+      <div class="video-title">Here to Stay (Live)</div>
+    </div>
+  </section>
+
+  <section id="tour" class="hero">
+    <h2>Upcoming Tour Dates</h2>
+    <p>June 1 - Los Angeles, CA<br />
+    June 5 - Chicago, IL<br />
+    June 10 - New York, NY</p>
+  </section>
+
+  <section id="news" class="hero">
+    <h2>Latest News</h2>
+    <p>New album in the works! Stay tuned for updates.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Kornhub Fan Site. Not affiliated with Korn or Pornhub.
+  </footer>
+</body>
+</html>
